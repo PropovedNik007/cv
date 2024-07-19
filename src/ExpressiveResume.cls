@@ -30,40 +30,69 @@
     \begin{flushleft}
         \nametitle{\commandkey{firstname}}{\ifcommandkey{middleinitial}{\commandkey{middleinitial}. }{}\commandkey{lastname}}
         {%
-            \ifcommandkey{email}%
-                {%
-                    \email{\commandkey{email}}%
-                    \ifcommandkey{phone}{\contactseparator}%
-                        {\ifcommandkey{linkedin}{\contactseparator}%
-                            {\ifcommandkey{github}{\contactseparator}%
-                                {\ifcommandkey{state}{\contactseparator}{}}}}%
-                }%
-                {}%
-            \ifcommandkey{phone}%
-                {%
-                    \phone{\commandkey{phone}}%
-                    \ifcommandkey{linkedin}{\contactseparator}%
-                        {\ifcommandkey{github}{\contactseparator}%
-                            {\ifcommandkey{state}{\contactseparator}{}}}%
-                }%
-                {}%
-            \ifcommandkey{linkedin}%
-                {%
-                    \linkedin{\commandkey{linkedin}}%
-                    \ifcommandkey{github}{\contactseparator}%
-                        {\ifcommandkey{state}{\contactseparator}{}}%
-                }%
-                {}%
-            \ifcommandkey{github}%
-                {%
-                    \github{\commandkey{github}}%
-                    \ifcommandkey{state}{\contactseparator}{}%
-                }%
-                {}%
-            \ifcommandkey{state}%
-                {\location{\ifcommandkey{city}{\commandkey{city}, }{}\commandkey{state}}}%
+            \ifcommandkey{email}{\email{\commandkey{email}}}{}%
+            \ifcommandkey{linkedin}{\contactseparator\linkedin{\commandkey{linkedin}}}{}%
+            \ifcommandkey{github}{\contactseparator\github{\commandkey{github}}\\}{}%
+            \vspace{5pt}
+            \ifcommandkey{phone}{\phone{\commandkey{phone}}}{}%
+            \ifcommandkey{state}{\contactseparator\location{\ifcommandkey{city}{\commandkey{city}, }{}\commandkey{state}}}{}%
                 {}%
         }
+    \end{flushleft}
+    \begin{flushleft}
+        {%
+            \ifcommandkey{email}%
+                {}%
+                {%
+                    \ifcommandkey{phone}{\phone{\commandkey{phone}}}{}%
+                    \ifcommandkey{linkedin}{\contactseparator\linkedin{\commandkey{linkedin}}}{}%
+                    \ifcommandkey{github}{\contactseparator\github{\commandkey{github}}}{}%
+                    \ifcommandkey{state}{\contactseparator\location{\ifcommandkey{city}{\commandkey{city}, }{}\commandkey{state}}}{}%
+                }%
+        }
+        % {%
+        %     \ifcommandkey{email}{\email{\commandkey{email}}\\}{}
+        %     \ifcommandkey{phone}{\phone{\commandkey{phone}}\\}{}
+        %     \ifcommandkey{linkedin}{\linkedin{\commandkey{linkedin}}\\}{}
+        %     \ifcommandkey{github}{\github{\commandkey{github}}\\}{}
+        %     \ifcommandkey{state}{\location{\ifcommandkey{city}{\commandkey{city}, }{}\commandkey{state}}\\}{}
+        % }
+        
+        % {%
+        %     \ifcommandkey{email}%
+        %         {%
+        %             \email{\commandkey{email}}%
+        %             \ifcommandkey{phone}{\contactseparator}%
+        %                 {\ifcommandkey{linkedin}{\contactseparator}\\%
+        %                     {\ifcommandkey{github}{\contactseparator}%
+        %                         {\ifcommandkey{state}{\contactseparator}{}}}}%
+        %         }%
+        %         {}%
+        %     \ifcommandkey{phone}%
+        %         {%
+        %             \phone{\commandkey{phone}}%
+        %             \ifcommandkey{linkedin}{\contactseparator}\\%
+        %                 {\ifcommandkey{github}{\contactseparator}%
+        %                     {\ifcommandkey{state}{\contactseparator}{}}}%
+        %         }%
+        %         {}%
+        %     \ifcommandkey{linkedin}%
+        %         {%
+        %             \linkedin{\commandkey{linkedin}}\\%
+        %             \ifcommandkey{github}{\contactseparator}%
+        %                 {\ifcommandkey{state}{\contactseparator}{}}%
+        %         }%
+        %         {}%
+        %     \ifcommandkey{github}%
+        %         {%
+        %             \github{\commandkey{github}}%
+        %             \ifcommandkey{state}{\contactseparator}{}%
+        %         }%
+        %         {}%
+        %     \ifcommandkey{state}%
+        %         {\location{\ifcommandkey{city}{\commandkey{city}, }{}\commandkey{state}}}%
+        %         {}%
+        % }
     \end{flushleft}
 
     \ifcommandkey{qrcode}{%

@@ -1,5 +1,7 @@
 <div align="center">
 
+For of the [project](https://github.com/thehale/expressive-resume)
+
 # Expressive Resume
 
 A beautiful resume/cover letter LaTeX template pair that are extraordinarily

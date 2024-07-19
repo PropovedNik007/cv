@@ -5,6 +5,15 @@
 % https://www.latex-project.org/help/documentation/clsguide.pdf
 
 % None currently
+\usepackage{multicol}
+\usepackage{paracol}
+\usepackage{array} % required for text wrapping in tables
+% \usepackage[utf8]{inputenc}
+% \usepackage{geometry}
+\usepackage{tabularx}
+% \usepackage{enumitem}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 %% ----- Parent Class -----
 \LoadClass[letterpaper,10pt]{article}
