@@ -108,7 +108,7 @@
 }
 \newcommand{\objective}[1]{%
     \begin{flushleft}
-        \textsc{Objective}: #1
+        #1
     \end{flushleft}
 }
 
