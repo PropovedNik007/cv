@@ -117,6 +117,7 @@
 \newcommand{\phone}[1]{\faIcon{phone-alt} \href{tel:+1-#1}{#1}}
 \newcommand{\github}[1]{\faIcon{github} \href{https://github.com/#1/}{#1}}
 \newcommand{\linkedin}[1]{\faIcon{linkedin} \href{https://linkedin.com/in/#1/}{#1}}
+\newcommand{\website}[1]{\faChrome {\space}  \href{https://propovednik007.github.io/#1/}{Portfolio Website}}
 \newcommand{\location}[1]{\faIcon{map-marker-alt} #1}
 % Experience/Achievements
 \newcommand{\tech}[1]{\textbf{#1}}

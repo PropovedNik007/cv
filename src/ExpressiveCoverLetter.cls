@@ -26,6 +26,7 @@
         phone,  % Must be in XXX-XXX-XXXX format to become a valid link
         linkedin,
         github,
+        website,
         city,  % Ignored if `state` is not also provided
         state,
         % qrcode,  % Path to an image of a 1000x1000px QR Code
@@ -69,6 +70,7 @@
             \ifcommandkey{state}%
                 {\location{\ifcommandkey{city}{\commandkey{city}, }{}\commandkey{state}}}%
                 {}%
+                \ifcommandkey{website}{\contactseparator\website{\commandkey{website}}}{}% Adding website next to state
         }
     \end{Center}
 
