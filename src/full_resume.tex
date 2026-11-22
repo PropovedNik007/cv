@@ -1,4 +1,5 @@
 \documentclass{ExpressiveResume}
+\newcommand{\singledate}[1]{#1}
 
 % ----- Resume -----
 \begin{document}
@@ -31,10 +32,10 @@
     \noindent Technische Universität Wien, Austria
 }
 
-\experience{Bachelor of Science}{Information technologies and
-telecommunications}{2014}{2020}{
+\experience{Bachelor of Science}{Information Technologies and
+Telecommunications}{2014}{2020}{
     \noindent Bauman Moscow State Technical University \newline
-    Diploma thesis ``3D printer failure detection system based on computer vision detection"
+    Diploma thesis: ``3D printer failure detection system based on computer vision''
 }
 
 % ----- Work Experience -----
@@ -51,7 +52,7 @@ telecommunications}{2014}{2020}{
     \achievement{Architected and built automated ESG analytics platform from scratch, engineering multi-stage pipeline with OCR and RAG-augmented LLMs for greenwashing detection}
     \achievement{Developed a full-stack solution of scalable AWS microservices architecture with React frontend, increasing data processing throughput by 60\%}
     \achievement{Delivered market-ready product automating sustainability reporting for hospitality clients, providing explainable AI-driven insights}
-    \tech{FastAPI, AWS, React, OCR, LangChain, BERT, LLaMA3, RAG}
+    \tech{FastAPI, AWS, React, OCR, LangChain, BERT, Llama 3, RAG}
 }
 
 \experience{Technische Universität Wien}{Research Scientist — Rail4Future}{Feb 2024}{Jul 2024}{
@@ -74,17 +75,17 @@ telecommunications}{2014}{2020}{
     \tech{Blender, Cura, Arduino, Python}
 }
 
-\experience{Full-Stack Developer}{Freelance \& Linwood}{Mar 2017}{Sep 2019}{
-    \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce and educational platforms.}
-    \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
-    \achievement{Delivered complete front-end redesigns and backend extensions for clients using modern frameworks.}
-    \tech{Python, Django, PHP, Yii2, React, JavaScript, HTML/SCSS, PostgreSQL}
-}
-
 \experience{KRK Group}{Frontend Developer}{Sep 2019}{Dec 2019}{
     \achievement{Implemented user interfaces and database communication for an internal learning platform.}
     \achievement{Collaborated with backend developers to ensure responsive, accessible, and scalable front-end components.}
     \tech{React, JavaScript, REST APIs}
+}
+
+\experience{Freelance \& Linwood}{Full-Stack Developer}{Mar 2017}{Sep 2019}{
+    \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce and educational platforms.}
+    \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
+    \achievement{Delivered complete front-end redesigns and backend extensions for clients using modern frameworks.}
+    \tech{Python, Django, PHP, Yii2, React, JavaScript, HTML/SCSS, PostgreSQL}
 }
 
 
@@ -190,9 +191,9 @@ telecommunications}{2014}{2020}{
     Conducted layout analysis of historical documents to improve text extraction accuracy.
     }
     \achievement{
-    Integrated NER and fine-tuned LLaMA-3 for metadata extraction, enhancing accuracy in identifying dates, locations, and photographers.
+    Integrated NER and fine-tuned Llama 3 for metadata extraction, enhancing accuracy in identifying dates, locations, and photographers.
     }
-    \tech{Tesseract, SpaCy, LLaMA-3, Python}
+    \tech{Tesseract, spaCy, Llama 3, Python}
 }
 
 \experience{Full-stack Development of NFT Platform}
@@ -208,7 +209,7 @@ telecommunications}{2014}{2020}{
 {Coding Austria}{Jul 2023}{}
 {
     \achievement{
-    Built a lips-reading app using the AV-HuBERT model for the Austrian Red Cross challenge, enabling communication in noisy environments.
+    Built a lip-reading app using the AV-HuBERT model for the Austrian Red Cross challenge, enabling communication in noisy environments.
     }
     \tech{AV-HuBERT, FastAPI, Next.js}
 }
@@ -217,7 +218,7 @@ telecommunications}{2014}{2020}{
 \section{Awards}
 
 \experience{Datathon Finalist}
-{Novartis Datathon — TiRex vs Pharma}{2024}{}
+{Novartis Datathon — TiRex vs Pharma}{Nov 2025}{}
 {
     \achievement{
     Built ML models to forecast post-generic drug erosion under sparse data scenarios using CatBoost and xLSTM-based TiRex architecture.
@@ -236,7 +237,7 @@ telecommunications}{2014}{2020}{
     Architected a robust agentic system with five custom MCP servers for SQL databases, Wikipedia, PDF retrieval, currency conversion, and a Python-powered calculator to ensure precise arithmetic and data handling.
     }
     \achievement{
-    Engineered a battle-tested Q&A system, which not only retrieves answers, but provides the sources (links, pages, database)
+    Engineered a battle-tested Q\&A system, which not only retrieves answers, but provides the sources (links, pages, database)
     }
     \tech{Claude Sonnet, Python, Model Context Protocol (MCP), SQL, FastMCP, Ragie, Wikipedia API}
 }
@@ -261,9 +262,9 @@ telecommunications}{2014}{2020}{
 
 
 \section{Studies and Publications}
-\experience{IEEM24-F-0298}{Publication}{2024}{}
+\experience{IEEE IEEM 2024}{Publication}{2024}{}
 {
-\noindent Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform
+\noindent ``Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform.'' 2024 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM), pp.~1074--1078. Co-authored with S.~Zhou et al. DOI: \href{https://doi.org/10.1109/IEEM62345.2024.10857013}{10.1109/IEEM62345.2024.10857013}
 }
 % {
 %     \noindent Presented at the International Conference on Industrial Engineering and Engineering Management (IEEM 2024). The paper discusses various machine learning surrogate models to enhance the efficiency of multi-body dynamic simulations, specifically applied to a railway digital twin platform.
@@ -272,12 +273,12 @@ telecommunications}{2014}{2020}{
 
 \experience{Deep Learning School}{Moscow Institute of Physics and Technology}{2020}{2021}
 
-\experience{School of Data Analysis}{Higher School of Economics University and Yandex}{2020}{2020}
+\experience{School of Data Analysis}{Higher School of Economics \& Yandex}{2020}{}
 
 
 \section{Technical Skills}
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
-AI/ML:        & Python, TensorFlow, PyTorch, LLMs (BERT, LLaMA, GPT), RAG, LangChain, Computer Vision (YOLO, OpenCV), scikit-learn, Pandas, NumPy \\
+AI/ML:        & Python, TensorFlow, PyTorch, LLMs (BERT, Llama, GPT), RAG, LangChain, Computer Vision (YOLO, OpenCV), scikit-learn, Pandas, NumPy \\
 Engineering:  & FastAPI, Django, React, Svelte, JavaScript/TypeScript, Docker, AWS (EC2/S3), PostgreSQL, Redis, RabbitMQ, Linux \\
 Languages:    & English (C1), Russian (C2), Armenian (B2), German (A2) \\
 \end{tabularx}

@@ -1,4 +1,5 @@
 \documentclass{ExpressiveResume}
+\newcommand{\singledate}[1]{#1}
 
 % ----- Resume -----
 \begin{document}
@@ -28,10 +29,10 @@
     \noindent Technische Universität Wien, Austria
 }
 
-\experience{Bachelor of Science}{Information technologies and
-telecommunications}{2014}{2020}{
+\experience{Bachelor of Science}{Information Technologies and
+Telecommunications}{2014}{2020}{
     \noindent Bauman Moscow State Technical University \newline
-    Diploma thesis ``3D printer failure detection system based on computer vision detection"
+    Diploma thesis: ``3D printer failure detection system based on computer vision''
 }
 
 % ----- Work Experience -----
@@ -44,19 +45,7 @@ telecommunications}{2014}{2020}{
     \tech{Python, PyTorch, 3D Segmentation, Point Clouds, Toolpath Generation, LLMs, Full-Stack}
 }
 
-\experience{Technische Universität Wien}
-{Data Scientist in Project Rail4Future}
-{Feb 2024}{Jul 2024}
-{
-    \achievement{
-    Analyzing rail irregularities, refactoring and optimization of the LSTM models. Working with industrial partners Siemens and ÖBB.
-    }
-    \achievement{
-    Performed significance tests, achieved robustness, and dramatically improved the performance of the model.
-    }
-}
-
-\experience{susteam}{CTO, Data Scientist}{Jan 2023}{Feb 2025}
+\experience{susteam}{CTO \& Data Scientist}{Jan 2023}{Feb 2025}
 {
     \achievement{
     Architecture and Full Stack development of the ESG system.
@@ -65,7 +54,19 @@ telecommunications}{2014}{2020}{
     Developed a pipeline with OCR, information retrieval, Data Analysis and Machine Learning. RAG implementation for LLMs.}
     
     \tech{
-    FastAPI, Amazon Web Services (AWS), Amazon EC2, S3, React.js, Bert, LLama3
+    FastAPI, Amazon Web Services (AWS), Amazon EC2, S3, React.js, BERT, Llama 3
+    }
+}
+
+\experience{Technische Universität Wien}
+{Research Scientist --- Rail4Future}
+{Feb 2024}{Jul 2024}
+{
+    \achievement{
+    Analyzed rail irregularities and refactored and optimized the LSTM models, improving prediction accuracy by 27\% and reducing training time by 40\%, with industrial partners Siemens and ÖBB.
+    }
+    \achievement{
+    Performed significance tests, achieved robustness, and dramatically improved the performance of the model.
     }
 }
 
@@ -114,7 +115,7 @@ telecommunications}{2014}{2020}{
     }
     
     \tech{
-    PHP, Yii2, html, scss, Python, Django
+    PHP, Yii2, HTML, SCSS, Python, Django
     }
     
 }
@@ -125,7 +126,7 @@ telecommunications}{2014}{2020}{
 \noindent\begin{tabularx}{\textwidth}{@{}X@{}X@{}X@{}X@{}}
 \textbf{Software Development}
 \begin{itemize}
-    \item docker
+    \item Docker
     \item Python
     \item C++
     \item R
@@ -141,11 +142,11 @@ telecommunications}{2014}{2020}{
     \item scikit-learn
     \item Pandas
     \item NumPy
-    \item Tensorflow
+    \item TensorFlow
     \item PyTorch
     \item OpenCV, YOLO
-    \item NLTK, SpaCy
-    \item Bert, LLama3, GPT
+    \item NLTK, spaCy
+    \item BERT, Llama 3, GPT
     \item LangChain, LlamaIndex
 \end{itemize}
 &
@@ -185,11 +186,19 @@ telecommunications}{2014}{2020}{
 % ----- Projects and Awards -----
 \section{Projects and Awards}
 
-\experience{2nd Place Winner} 
-{AIM Hackathon - TIMETOACT Group}{Oct 2024}{} 
+\experience{1st Place Winner}
+{AI Mission Hackathon 3 --- ``Nightwalkers''}{Oct 2025}{}
+{
+    \achievement{
+    Built a multi-tool AI agent that autonomously answered complex sustainability questions, reaching over 70\% accuracy on database and Wikipedia queries.
+    }
+}
+
+\experience{2nd Place Winner}
+{AIM Hackathon --- TIMETOACT Group}{Oct 2024}{}
 { 
     \achievement{ 
-    Developed a platform that uses Retrieval-Augmented Generation (RAG) to identify greenwashing in ESG reports. The system analyzed text from ESG reports, matched it with labeled data on greenwashing indicators, and provided a score based on the trustworthiness of the content. I also integrated an explainability feature to retrieve the most relevant quotes for identified greenwashing examples. 
+    Developed a platform that uses Retrieval-Augmented Generation (RAG) to identify greenwashing in ESG reports. The system analyzed text from ESG reports, matched it with labeled data on greenwashing indicators, and provided a score based on the trustworthiness of the content. Integrated an explainability feature that retrieves the most relevant quotes for each identified greenwashing example. 
     } 
     \tech{ 
     LangChain, OpenAI, FAISS, Python, Flask 
@@ -225,7 +234,7 @@ telecommunications}{2014}{2020}{
 }
 
 \experience{Crypto Trading Analysis and Future Trading}
-{TradeBot}{June 2024}{}
+{TradeBot}{Jun 2024}{}
 {
     \achievement{
     Engineered a bot to systematically scrape and collect trade data from Binance, allowing detailed real-time market analysis.
@@ -241,7 +250,7 @@ telecommunications}{2014}{2020}{
 }
 
 \experience{Document Analysis and Optical Character Recognition (OCR)}
-{DAVU Project TU Wien}{June 2024}{}
+{DAVU Project TU Wien}{Jun 2024}{}
 {
     \achievement{
     Conducted a comprehensive layout analysis of historical documents, identifying key structural elements to improve text extraction accuracy.
@@ -253,10 +262,10 @@ telecommunications}{2014}{2020}{
     Analyzed the impact of various preprocessing methods, such as binarization and cropping, on OCR performance, achieving optimal text recognition by fine-tuning OCR engine parameters.
     }
     \achievement{
-    Integrated advanced Named Entity Recognition (NER) using SpaCy and fine-tuned language models (e.g., LLaMA-3) to extract metadata from images, enhancing the accuracy of location, date, and photographer identification in historical datasets.
+    Integrated advanced Named Entity Recognition (NER) using spaCy and fine-tuned language models (e.g., Llama 3) to extract metadata from images, enhancing the accuracy of location, date, and photographer identification in historical datasets.
     }
     
-    \tech{Tesseract, SpaCy, LLaMA-3, Python}
+    \tech{Tesseract, spaCy, Llama 3, Python}
 }
 
 \experience{Full-stack Development of the NFT Platform}
@@ -278,7 +287,7 @@ telecommunications}{2014}{2020}{
 {Coding Austria}{Jul 2023}{}
 {
     \achievement{
-    Utilized Audio-Visual Hidden Unit BERT model for lips reading task for the Austrian Red Cross challenge.
+    Used the Audio-Visual Hidden Unit BERT (AV-HuBERT) model for lip reading in the Austrian Red Cross challenge.
     }
     \achievement{
     Integrated the model into the web app, passing the video stream from the smartphone to the model, reading the lips and generating a text passed as a message to the chat.
@@ -295,17 +304,17 @@ telecommunications}{2014}{2020}{
 {Tourism Technology Hackathon}{Nov 2023}{}
 {
     \achievement{
-    Implemented a data pipeline mapping data from different sources and building a knowledge graph for different tourism subjects. The result I visualized as an interactive map with the chat bot, that could wrangle the the point of interest and conclude the insights of the analysis.
+    Built a data pipeline that maps data from multiple sources into a knowledge graph of tourism subjects, visualized as an interactive map with a chatbot for analyzing points of interest.
     }
     \tech{
-    Selenium, geoandas, folium
+    Selenium, GeoPandas, Folium
     }
 }
 
 \section{Studies and Publications}
-\experience{IEEM24-F-0298}{Publication}{2024}{}
+\experience{IEEE IEEM 2024}{Publication}{2024}{}
 {
-\noindent Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform
+\noindent ``Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform.'' 2024 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM), pp.~1074--1078. Co-authored with S.~Zhou et al. DOI: \href{https://doi.org/10.1109/IEEM62345.2024.10857013}{10.1109/IEEM62345.2024.10857013}
 }
 % {
 %     \noindent Presented at the International Conference on Industrial Engineering and Engineering Management (IEEM 2024). The paper discusses various machine learning surrogate models to enhance the efficiency of multi-body dynamic simulations, specifically applied to a railway digital twin platform.
@@ -314,6 +323,6 @@ telecommunications}{2014}{2020}{
 
 \experience{Deep Learning School}{Moscow Institute of Physics and Technology}{2020}{2021}
 
-\experience{School of Data Analysis}{Higher School of Economics University and Yandex}{2020}{2020}
+\experience{School of Data Analysis}{Higher School of Economics \& Yandex}{2020}{}
 
 \end{document}

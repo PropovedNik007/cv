@@ -1,6 +1,6 @@
 <div align="center">
 
-For of the [project](https://github.com/thehale/expressive-resume)
+Fork of the [project](https://github.com/thehale/expressive-resume)
 
 # Expressive Resume
 

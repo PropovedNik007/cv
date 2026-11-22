@@ -28,24 +28,32 @@
 % ----- Education -----
 \section{Education}
 
-\experience{Master of Science}{Data Science}{2022}{2025}{
+\experience{Master of Science}{Data Science}{2022}{2026}{
     \noindent Technische Universität Wien, Austria
 }
 
-\experience{Bachelor of Science}{Information technologies and
-telecommunications}{2014}{2020}{
+\experience{Bachelor of Science}{Information Technologies and
+Telecommunications}{2014}{2020}{
     \noindent Bauman Moscow State Technical University \newline
-    Diploma thesis ``3D printer failure detection system based on computer vision detection"
+    Diploma thesis: ``3D printer failure detection system based on computer vision''
 }
 
 % ----- Work Experience -----
 \section{Work Experience}
 
-\experience{susteam}{Leading Data Scientist}{Jan 2023}{Feb 2025}{
-    \achievement{Architected and built automated analytics platform from scratch, engineering multi-stage pipeline with ML patterns OCR and RAG-augmented LLMs for greenwashing detection}
+\experience{Flexam}{Software \& Machine Learning Engineer}{Feb 2026}{Present}{
+    \achievement{Develop software for industrial multi-axis additive manufacturing in Vienna: the path from a 3D model to a robot-ready, multi-axis toolpath.}
+    \achievement{Build the 3D segmentation pipeline (geometry and machine learning) that splits a mesh into printable regions, proposes cutting planes and build orientations, and smooths region boundaries.}
+    \achievement{Develop the slicing engine in Go, with performance-critical parts in Rust: non-planar layers, multi-axis motion, and toolpath and G-code generation for industrial robot arms and multi-axis machines.}
+    \achievement{Build the full-stack slicer product: React, TypeScript and three.js apps for slicing and toolpath editing, the Go slicing service, and language-model agents that help build, inspect and debug toolpaths.}
+    \tech{Go, Rust, Python, TypeScript, React, three.js, FastAPI, trimesh, NumPy, PostgreSQL, Docker}
+}
+
+\experience{susteam}{CTO \& Data Scientist}{Jan 2023}{Feb 2025}{
+    \achievement{Architected and built automated ESG analytics platform from scratch, engineering multi-stage pipeline with OCR and RAG-augmented LLMs for greenwashing detection}
     \achievement{Developed a full-stack solution of scalable AWS microservices architecture with React frontend, increasing data processing throughput by 60\%}
     \achievement{Delivered market-ready product automating sustainability reporting for hospitality clients, providing explainable AI-driven insights}
-    \tech{FastAPI, AWS, React, OCR, LangChain, BERT, LLaMA3, RAG}
+    \tech{FastAPI, AWS, React, OCR, LangChain, BERT, Llama 3, RAG}
 }
 
 \experience{Technische Universität Wien}{Research Scientist — Rail4Future}{Feb 2024}{Jul 2024}{
@@ -64,7 +72,7 @@ telecommunications}{2014}{2020}{
 
 \experience{Arterra Miniature}{Software Engineer \& 3D Maker}{Feb 2020}{Mar 2021}{
     \achievement{Created interactive 3D visualizations and prototypes, delivering end-to-end custom hardware and software solutions for clients.}
-    \achievement{3D-printing and integrating microcontrollers and designed automation for small-scale production devices and art installations.}
+    \achievement{3D-printed parts, integrated microcontrollers, and designed automation for small-scale production devices and art installations.}
     \tech{Blender, Cura, Arduino, Python}
 }
 
@@ -76,7 +84,7 @@ telecommunications}{2014}{2020}{
     \tech{React, JavaScript, REST APIs}
 }
 
-\experience{Full-Stack Developer}{Freelance \& Linwood}{Mar 2017}{Sep 2019}{
+\experience{Freelance \& Linwood}{Full-Stack Developer}{Mar 2017}{Sep 2019}{
     \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce and educational platforms.}
     \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
     \achievement{Delivered complete front-end redesigns and backend extensions for clients using modern frameworks.}
@@ -100,10 +108,10 @@ telecommunications}{2014}{2020}{
 \begin{itemize}
     \item scikit-learn 
     \item Pandas, NumPy
-    \item Tensorflow, PyTorch
+    \item TensorFlow, PyTorch
     \item OpenCV, YOLO
-    \item NLTK, SpaCy
-    \item Bert, LLama3, GPT
+    \item NLTK, spaCy
+    \item BERT, Llama 3, GPT
     \item LangChain, LlamaIndex
     \item Anthropic agents, MCP
 \end{itemize}
@@ -191,9 +199,9 @@ telecommunications}{2014}{2020}{
     Conducted layout analysis of historical documents to improve text extraction accuracy.
     }
     \achievement{
-    Integrated NER and fine-tuned LLaMA-3 for metadata extraction, enhancing accuracy in identifying dates, locations, and photographers.
+    Integrated NER and fine-tuned Llama 3 for metadata extraction, enhancing accuracy in identifying dates, locations, and photographers.
     }
-    \tech{Tesseract, SpaCy, LLaMA-3, Python}
+    \tech{Tesseract, spaCy, Llama 3, Python}
 }
 
 \experience{Full-stack Development of NFT Platform}
@@ -209,7 +217,7 @@ telecommunications}{2014}{2020}{
 {Coding Austria}{Jul 2023}{}
 {
     \achievement{
-    Built a lips-reading app using the AV-HuBERT model for the Austrian Red Cross challenge, enabling communication in noisy environments.
+    Built a lip-reading app using the AV-HuBERT model for the Austrian Red Cross challenge, enabling communication in noisy environments.
     }
     \tech{AV-HuBERT, FastAPI, Next.js}
 }
@@ -262,9 +270,9 @@ telecommunications}{2014}{2020}{
 
 
 \section{Studies and Publications}
-\experience{IEEM24-F-0298}{Publication}{2024}{}
+\experience{IEEE IEEM 2024}{Publication}{2024}{}
 {
-\noindent Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform
+\noindent ``Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform.'' 2024 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM), pp.~1074--1078. Co-authored with S.~Zhou et al. DOI: \href{https://doi.org/10.1109/IEEM62345.2024.10857013}{10.1109/IEEM62345.2024.10857013}
 }
 % {
 %     \noindent Presented at the International Conference on Industrial Engineering and Engineering Management (IEEM 2024). The paper discusses various machine learning surrogate models to enhance the efficiency of multi-body dynamic simulations, specifically applied to a railway digital twin platform.
@@ -273,7 +281,7 @@ telecommunications}{2014}{2020}{
 
 \experience{Deep Learning School}{Moscow Institute of Physics and Technology}{2020}{2021}
 
-\experience{School of Data Analysis}{Higher School of Economics University and Yandex}{2020}{2020}
+\experience{School of Data Analysis}{Higher School of Economics \& Yandex}{2020}{}
 
 
 % \section{Technical Skills}
