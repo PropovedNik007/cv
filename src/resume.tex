@@ -1,4 +1,5 @@
 \documentclass{ExpressiveResume}
+\newcommand{\singledate}[1]{#1}
 
 % ----- Resume -----
 \begin{document}
@@ -27,7 +28,7 @@
 % ----- Education -----
 \section{Education}
 
-\experience{Master of Science}{Data Science}{2022}{2025}{
+\experience{Master of Science}{Data Science}{2022}{2026}{
     \noindent Technische Universität Wien, Austria
 }
 
@@ -39,6 +40,13 @@ telecommunications}{2014}{2020}{
 
 % ----- Work Experience -----
 \section{Work Experience}
+
+\experience{Flexam}{Software \& Machine Learning Engineer}{Feb 2026}{Present}{
+    \achievement{Develop full-stack features and AI agent workflows, integrating LLM-based pipelines into production}
+    \achievement{Built 3D segmentation models for point cloud and mesh data, improving object-level accuracy for downstream geometric processing}
+    \achievement{Designed and implemented toolpath slicing strategies, developing algorithms for path generation and optimization}
+    \tech{Python, PyTorch, 3D Segmentation, Point Clouds, Toolpath Generation, LLMs, Full-Stack}
+}
 
 \experience{susteam}{CTO \& Data Scientist}{Jan 2023}{Feb 2025}{
     \achievement{Architected and built automated ESG analytics platform from scratch, engineering multi-stage pipeline with OCR and RAG-augmented LLMs for greenwashing detection}
@@ -67,17 +75,26 @@ telecommunications}{2014}{2020}{
 %     \tech{Blender, Cura, Arduino, Python}
 % }
 
-\experience{Full-Stack Developer}{Freelance \& Linwood}{Mar 2017}{Sep 2019}{
-    \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce and educational platforms.}
-    \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
-    \achievement{Delivered complete front-end redesigns and backend extensions for clients using modern frameworks.}
-    \tech{Python, Django, PHP, Yii2, React, JavaScript, HTML/SCSS, PostgreSQL}
-}
 
-\experience{KRK Group}{Frontend Developer}{Sep 2019}{Dec 2019}{
-    \achievement{Implemented user interfaces and database communication for an internal learning platform.}
-    \achievement{Collaborated with backend developers to ensure responsive, accessible, and scalable front-end components.}
-    \tech{React, JavaScript, REST APIs}
+
+% \experience{KRK Group}{Frontend Developer}{Sep 2019}{Dec 2019}{
+%     \achievement{Implemented user interfaces and database communication for an internal learning platform.}
+%     \achievement{Collaborated with backend developers to ensure responsive, accessible, and scalable front-end components.}
+%     \tech{React, JavaScript, REST APIs}
+% }
+
+% \experience{Full-Stack Developer}{Freelance \& Linwood}{Mar 2017}{Sep 2019}{
+%     \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce and educational platforms.}
+%     \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
+%     \achievement{Delivered complete front-end redesigns and backend extensions for clients using modern frameworks.}
+%     \tech{Python, Django, PHP, Yii2, React, JavaScript, HTML/SCSS, PostgreSQL}
+% }
+
+\experience{Full-Stack Developer}{Freelance, Linwood \& KRK Group}{Mar 2017}{Dec 2019}{
+    \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce, educational, and internal learning platforms.}
+    \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
+    \achievement{Delivered front-end redesigns and backend extensions using modern frameworks.}
+    \tech{Python, Django, PHP, Yii2, React, JavaScript, HTML/SCSS, PostgreSQL, REST APIs}
 }
 
 
@@ -157,17 +174,17 @@ telecommunications}{2014}{2020}{
     \tech{RAG, LLM, Flask, Svelte, Semantic Search, Legal Tech, AI}
 }
 
-\experience{Portfolio Website Development}
-{Arterra}{Aug 2024}{}
-{
-    \achievement{
-    Designed and developed a portfolio website, integrating CI/CD pipelines for seamless updates via GitHub Pages.
-    }
-    \achievement{
-    Utilized Obsidian vault data to create an interactive front-end that visualizes my professional journey using graphology and sigma libraries.
-    }
-    \tech{Svelte, graphology, sigma}
-}
+% \experience{Portfolio Website Development}
+% {Arterra}{Aug 2024}{}
+% {
+%     \achievement{
+%     Designed and developed a portfolio website, integrating CI/CD pipelines for seamless updates via GitHub Pages.
+%     }
+%     \achievement{
+%     Utilized Obsidian vault data to create an interactive front-end that visualizes my professional journey using graphology and sigma libraries.
+%     }
+%     \tech{Svelte, graphology, sigma}
+% }
 
 \experience{Crypto Trading Analysis and Future Trading}
 {TradeBot}{Jun 2024}{}
@@ -214,6 +231,16 @@ telecommunications}{2014}{2020}{
 % ----- Awards -----
 \section{Awards}
 
+\experience{Datathon Finalist}
+{Novartis Datathon — TiRex vs Pharma}{Nov 2025}{}
+{
+    \achievement{
+    Built ML models to forecast post-generic drug erosion under sparse data scenarios using CatBoost and xLSTM-based TiRex architecture.
+    }
+    \tech{CatBoost, xLSTM, Time Series Forecasting, Pharma Analytics}
+}
+
+
 \experience{1st Place Winner}
 {AI Mission Hackathon 3 — “Nightwalkers”}{Oct 2025}{}
 {
@@ -224,7 +251,7 @@ telecommunications}{2014}{2020}{
     Architected a robust agentic system with five custom MCP servers for SQL databases, Wikipedia, PDF retrieval, currency conversion, and a Python-powered calculator to ensure precise arithmetic and data handling.
     }
     \achievement{
-    Engineered a battle-tested Q&A system, which not only retrieves answers, but provides the sources (links, pages, database)
+    Engineered a battle-tested Q\&A system, which not only retrieves answers, but provides the sources (links, pages, database)
     }
     \tech{Claude Sonnet, Python, Model Context Protocol (MCP), SQL, FastMCP, Ragie, Wikipedia API}
 }

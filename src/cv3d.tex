@@ -1,0 +1,286 @@
+\documentclass{ExpressiveResume}
+\newcommand{\singledate}[1]{#1}
+
+% ----- Resume -----
+\begin{document}
+
+% ----- Name + Contact Information -----
+\resumeheader[
+    firstname=Artur,
+    % middleinitial=,
+    lastname=Sogomonyan,
+    email=arthur.sogomonyan@gmail.com,
+    phone= +43-677-641-145-81,
+    linkedin=artur-sogomonyan,
+    github=PropovedNik007,
+    website=arterra,
+    city=Vienna,
+    state=Austria,
+    qrcode=demo.jpg,
+    fixobjectivespacing=false
+]
+
+% \objective{Machine Learning Engineer}
+
+% \section{Professional Summary}
+% \noindent Visionary AI Engineer and CTO with expertise in building end-to-end intelligent systems that bridge physical and digital worlds. Specialized in deploying production-ready AI solutions across sustainable technology, autonomous transportation, and decentralized systems. Proven track record of translating complex business problems into scalable technical architectures using cutting-edge Machine Learning, Computer Vision, and LLMs.
+
+% ----- Education -----
+\section{Education}
+
+\experience{Master of Science}{Data Science}{2022}{2025}{
+    \noindent Technische Universität Wien, Austria
+}
+
+\experience{Bachelor of Science}{Information technologies and
+telecommunications}{2014}{2020}{
+    \noindent Bauman Moscow State Technical University \newline
+    Diploma thesis ``3D printer failure detection system based on computer vision detection"
+}
+
+% ----- Work Experience -----
+\section{Work Experience}
+
+\experience{susteam}{Leading Data Scientist}{Jan 2023}{Feb 2025}{
+    \achievement{Architected and built automated analytics platform from scratch, engineering multi-stage pipeline with ML patterns OCR and RAG-augmented LLMs for greenwashing detection}
+    \achievement{Developed a full-stack solution of scalable AWS microservices architecture with React frontend, increasing data processing throughput by 60\%}
+    \achievement{Delivered market-ready product automating sustainability reporting for hospitality clients, providing explainable AI-driven insights}
+    \tech{FastAPI, AWS, React, OCR, LangChain, BERT, LLaMA3, RAG}
+}
+
+\experience{Technische Universität Wien}{Research Scientist — Rail4Future}{Feb 2024}{Jul 2024}{
+    \achievement{Optimized LSTM-based digital twin for rail infrastructure, improving prediction accuracy by 27\% and reducing training time by 40\% for Siemens and ÖBB}
+    \achievement{Implemented rigorous statistical validation frameworks establishing new standards for model robustness in production}
+    \achievement{Refactored and modularized codebase enabling faster experimentation cycles and reliable deployment}
+    \tech{Python, TensorFlow, LSTM, Statistical Analysis, Digital Twins}
+}
+
+\experience{GLOSAV}{Machine Learning Analyst}{Feb 2021}{Jul 2021}{
+    \achievement{Developed a computer vision pipeline for obstacle detection and tracking on railway routes using YOLOv5 and OpenCV.}
+    \achievement{Achieved sub-5ms latency on real-time streams by optimizing frame processing and inference pipelines.}
+    \achievement{Enhanced detection stability through custom temporal smoothing and calibration algorithms.}
+    \tech{Python, YOLOv5, OpenCV, NumPy}
+}
+
+\experience{Arterra Miniature}{Software Engineer \& 3D Maker}{Feb 2020}{Mar 2021}{
+    \achievement{Created interactive 3D visualizations and prototypes, delivering end-to-end custom hardware and software solutions for clients.}
+    \achievement{3D-printing and integrating microcontrollers and designed automation for small-scale production devices and art installations.}
+    \tech{Blender, Cura, Arduino, Python}
+}
+
+
+
+\experience{KRK Group}{Frontend Developer}{Sep 2019}{Dec 2019}{
+    \achievement{Implemented user interfaces and database communication for an internal learning platform.}
+    \achievement{Collaborated with backend developers to ensure responsive, accessible, and scalable front-end components.}
+    \tech{React, JavaScript, REST APIs}
+}
+
+\experience{Full-Stack Developer}{Freelance \& Linwood}{Mar 2017}{Sep 2019}{
+    \achievement{Designed, implemented, and deployed full-stack web applications for e-commerce and educational platforms.}
+    \achievement{Optimized page load times and database queries, improving performance by up to 40\%.}
+    \achievement{Delivered complete front-end redesigns and backend extensions for clients using modern frameworks.}
+    \tech{Python, Django, PHP, Yii2, React, JavaScript, HTML/SCSS, PostgreSQL}
+}
+
+
+% ----- Skills -----
+\section{Skills}
+\noindent\begin{tabularx}{\textwidth}{@{}X@{}X@{}X@{}X@{}}
+\textbf{Software Development}
+\begin{itemize}
+    \item Docker, Git
+    \item Python, C++, R
+    \item Django, Flask, FastAPI
+    \item JavaScript, TypeScript
+    \item React, Svelte
+\end{itemize}
+&
+\textbf{Machine Learning}
+\begin{itemize}
+    \item scikit-learn 
+    \item Pandas, NumPy
+    \item Tensorflow, PyTorch
+    \item OpenCV, YOLO
+    \item NLTK, SpaCy
+    \item Bert, LLama3, GPT
+    \item LangChain, LlamaIndex
+    \item Anthropic agents, MCP
+\end{itemize}
+&
+\textbf{Databases and Cloud}
+\begin{itemize}
+    \item PostgreSQL
+    \item MongoDB
+    \item Redis
+    \item RabbitMQ
+    \item nginx, Gunicorn
+    \item Spark
+    \item AWS EC2, S3
+    \item Linux/Debian/Fedora
+\end{itemize}
+&
+\textbf{Languages}
+\begin{itemize}
+    \item English (C1)
+    \item German (A2)
+    \item Russian (C2)
+    \item Armenian (B2)
+\end{itemize}
+\end{tabularx}
+
+% ----- Technical Projects -----
+% \section{Technical Projects}
+
+% \experience{Expressive Resume}{Personal Project}{Nov 2021}{Dec 2021}{
+%     \achievement{
+
+%         Created a \tech{\LaTeX} class that makes it easy for anyone to quickly create a beautiful resume and cover letter.
+
+%     }
+% }
+
+% ----- Projects -----
+\section{Projects}
+
+\experience{AI-Powered Legal Analytics Platform}
+{LawSyncr}{Aug 2024}{Present}{
+    \achievement{
+    Architected and developed an AI-powered legal research platform that transforms complex legal documents into actionable insights using Retrieval-Augmented Generation (RAG)
+    }
+    \achievement{
+    Implemented advanced document processing pipeline with semantic search capabilities, enabling lawyers to quickly find relevant case law and legal precedents
+    }
+    \achievement{
+    Built end-to-end full-stack MVP with responsive Svelte frontend and Flask backend, delivering intuitive user experience for legal professionals
+    }
+    \achievement{
+    Developed comprehensive investor pitch deck and business strategy, positioning the platform at the intersection of legal tech and generative AI
+    }
+    \tech{RAG, LLM, Flask, Svelte, Semantic Search, Legal Tech, AI}
+}
+
+% \experience{Portfolio Website Development}
+% {Arterra}{Aug 2024}{}
+% {
+%     \achievement{
+%     Designed and developed a portfolio website, integrating CI/CD pipelines for seamless updates via GitHub Pages.
+%     }
+%     \achievement{
+%     Utilized Obsidian vault data to create an interactive front-end that visualizes my professional journey using graphology and sigma libraries.
+%     }
+%     \tech{Svelte, graphology, sigma}
+% }
+
+\experience{Crypto Trading Analysis and Future Trading}
+{TradeBot}{Jun 2024}{}
+{
+    \achievement{
+    Engineered a bot to systematically scrape and collect trade data from Binance, allowing detailed real-time market analysis.
+    }
+    \achievement{
+    Designed and implemented a robust trading strategy, optimizing both short-term gains and long-term trends.
+    }
+    \tech{asyncio, FastAPI, BinanceAPI, pandas, mplfinance}
+}
+
+\experience{Document Analysis and Optical Character Recognition (OCR)}
+{DAVU Project TU Wien}{Jun 2024}{}
+{
+    \achievement{
+    Conducted layout analysis of historical documents to improve text extraction accuracy.
+    }
+    \achievement{
+    Integrated NER and fine-tuned LLaMA-3 for metadata extraction, enhancing accuracy in identifying dates, locations, and photographers.
+    }
+    \tech{Tesseract, SpaCy, LLaMA-3, Python}
+}
+
+\experience{Full-stack Development of NFT Platform}
+{Cryptex}{Feb 2024}{}
+{
+    \achievement{
+    Implemented a secure authentication system using MetaMask and Polygon blockchain for managing encoded NFTs.
+    }
+    \tech{Svelte, Polygon, Solidity}
+}
+
+\experience{Lip Reading App at Hackathon}
+{Coding Austria}{Jul 2023}{}
+{
+    \achievement{
+    Built a lips-reading app using the AV-HuBERT model for the Austrian Red Cross challenge, enabling communication in noisy environments.
+    }
+    \tech{AV-HuBERT, FastAPI, Next.js}
+}
+
+% ----- Awards -----
+\section{Awards}
+
+\experience{Datathon Finalist}
+{Novartis Datathon — TiRex vs Pharma}{Nov 2025}{}
+{
+    \achievement{
+    Built ML models to forecast post-generic drug erosion under sparse data scenarios using CatBoost and xLSTM-based TiRex architecture.
+    }
+    \tech{CatBoost, xLSTM, Time Series Forecasting, Pharma Analytics}
+}
+
+
+\experience{1st Place Winner}
+{AI Mission Hackathon 3 — “Nightwalkers”}{Oct 2025}{}
+{
+    \achievement{
+    Won 1st place by developing a sophisticated multi-tool AI agent that autonomously answered complex sustainability questions, achieving over 70\% accuracy on database and Wikipedia queries through iterative testing and prompt refinement.
+    }
+    \achievement{
+    Architected a robust agentic system with five custom MCP servers for SQL databases, Wikipedia, PDF retrieval, currency conversion, and a Python-powered calculator to ensure precise arithmetic and data handling.
+    }
+    \achievement{
+    Engineered a battle-tested Q\&A system, which not only retrieves answers, but provides the sources (links, pages, database)
+    }
+    \tech{Claude Sonnet, Python, Model Context Protocol (MCP), SQL, FastMCP, Ragie, Wikipedia API}
+}
+
+\experience{2nd Place Winner} 
+{AIM Hackathon — TIMETOACT Group}{Oct 2024}{}
+{
+    \achievement{
+    Developed a Retrieval-Augmented Generation (RAG) platform to identify greenwashing in ESG reports, assigning trustworthiness scores and providing explainable insights.
+    }
+    \tech{LangChain, OpenAI, FAISS, Python, Flask}
+}
+
+\experience{2nd Place Winner}
+{Tourism Technology Hackathon}{Nov 2023}{}
+{
+    \achievement{
+    Created an interactive knowledge graph and chatbot that analyzes tourism data and visualizes points of interest on a map.
+    }
+    \tech{Selenium, GeoPandas, Folium}
+}
+
+
+\section{Studies and Publications}
+\experience{IEEM24-F-0298}{Publication}{2024}{}
+{
+\noindent Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform
+}
+% {
+%     \noindent Presented at the International Conference on Industrial Engineering and Engineering Management (IEEM 2024). The paper discusses various machine learning surrogate models to enhance the efficiency of multi-body dynamic simulations, specifically applied to a railway digital twin platform.
+% }
+
+
+\experience{Deep Learning School}{Moscow Institute of Physics and Technology}{2020}{2021}
+
+\experience{School of Data Analysis}{Higher School of Economics University and Yandex}{2020}{2020}
+
+
+% \section{Technical Skills}
+% \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+% AI/ML:        & Python, TensorFlow, PyTorch, LLMs (BERT, LLaMA, GPT), RAG, LangChain, Computer Vision (YOLO, OpenCV), scikit-learn, Pandas, NumPy \\
+% Engineering:  & FastAPI, Django, React, Svelte, JavaScript/TypeScript, Docker, AWS (EC2/S3), PostgreSQL, Redis, RabbitMQ, Linux \\
+% Languages:    & English (C1), Russian (C2), Armenian (B2), German (A2) \\
+% \end{tabularx}
+
+\end{document}
