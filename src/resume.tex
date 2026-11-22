@@ -42,10 +42,10 @@ Telecommunications}{2014}{2020}{
 \section{Work Experience}
 
 \experience{Flexam}{Software \& Machine Learning Engineer}{Feb 2026}{Present}{
-    \achievement{Develop full-stack features and AI agent workflows, integrating LLM-based pipelines into production}
-    \achievement{Built 3D segmentation models for point cloud and mesh data, improving object-level accuracy for downstream geometric processing}
-    \achievement{Designed and implemented toolpath slicing strategies, developing algorithms for path generation and optimization}
-    \tech{Python, PyTorch, 3D Segmentation, Point Clouds, Toolpath Generation, LLMs, Full-Stack}
+    \achievement{Build the 3D segmentation pipeline that splits meshes into printable regions with cutting planes and build orientations.}
+    \achievement{Develop the slicing engine in Go and Rust: non-planar, multi-axis toolpaths and G-code for industrial robot arms.}
+    \achievement{Build the full-stack slicer (React, TypeScript, three.js, Go services) and LLM agents that help debug toolpaths.}
+    \tech{Go, Rust, Python, TypeScript, React, three.js, trimesh, PostgreSQL, Docker}
 }
 
 \experience{susteam}{CTO \& Data Scientist}{Jan 2023}{Feb 2025}{
@@ -103,17 +103,17 @@ Telecommunications}{2014}{2020}{
 \noindent\begin{tabularx}{\textwidth}{@{}X@{}X@{}X@{}X@{}}
 \textbf{Software Development}
 \begin{itemize}
+    \item Python, Go, Rust, C++, R
+    \item TypeScript, JavaScript
+    \item Node.js, Bun
+    \item FastAPI, Django, Flask
+    \item React, Svelte, three.js
     \item Docker, Git
-    \item Python, C++, R
-    \item Django, Flask, FastAPI
-    \item JavaScript, TypeScript
-    \item React, Svelte
 \end{itemize}
 &
 \textbf{Machine Learning}
 \begin{itemize}
-    \item scikit-learn 
-    \item Pandas, NumPy
+    \item scikit-learn, Pandas, NumPy
     \item TensorFlow, PyTorch
     \item OpenCV, YOLO
     \item NLTK, spaCy
@@ -122,26 +122,27 @@ Telecommunications}{2014}{2020}{
     \item Anthropic agents, MCP
 \end{itemize}
 &
-\textbf{Databases and Cloud}
+\textbf{3D \& Manufacturing}
 \begin{itemize}
-    \item PostgreSQL
-    \item MongoDB
-    \item Redis
-    \item RabbitMQ
+    \item 3D segmentation
+    \item Mesh processing, trimesh
+    \item Slicing, toolpath generation
+    \item G-code
+    \item Robot arms
+    \item Multi-axis printing
+\end{itemize}
+&
+\textbf{Data and Cloud}
+\begin{itemize}
+    \item PostgreSQL, MongoDB
+    \item Redis, RabbitMQ
     \item nginx, Gunicorn
     \item Spark
     \item AWS EC2, S3
-    \item Linux/Debian/Fedora
-\end{itemize}
-&
-\textbf{Languages}
-\begin{itemize}
-    \item English (C1)
-    \item German (A2)
-    \item Russian (C2)
-    \item Armenian (B2)
+    \item Linux (Debian, Fedora)
 \end{itemize}
 \end{tabularx}
+\par\vspace{2pt}\noindent\textbf{Languages:} English (C1), Russian (C2), Armenian (B2), German (A2)
 
 % ----- Technical Projects -----
 % \section{Technical Projects}
@@ -278,7 +279,7 @@ Telecommunications}{2014}{2020}{
 \section{Studies and Publications}
 \experience{IEEE IEEM 2024}{Publication}{2024}{}
 {
-\noindent ``Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform.'' 2024 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM), pp.~1074--1078. Co-authored with S.~Zhou et al. DOI: \href{https://doi.org/10.1109/IEEM62345.2024.10857013}{10.1109/IEEM62345.2024.10857013}
+\noindent ``Comparative Analysis of Machine Learning-based Surrogate Modeling Approaches for Multi-body Dynamic Simulation in Railway Digital Twin Platform.'' IEEE IEEM 2024, pp.~1074--1078; co-authored with S.~Zhou et al.\newline DOI: \href{https://doi.org/10.1109/IEEM62345.2024.10857013}{10.1109/IEEM62345.2024.10857013}
 }
 % {
 %     \noindent Presented at the International Conference on Industrial Engineering and Engineering Management (IEEM 2024). The paper discusses various machine learning surrogate models to enhance the efficiency of multi-body dynamic simulations, specifically applied to a railway digital twin platform.

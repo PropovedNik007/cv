@@ -39,10 +39,11 @@ Telecommunications}{2014}{2020}{
 \section{Work Experience}
 
 \experience{Flexam}{Software \& Machine Learning Engineer}{Feb 2026}{Present}{
-    \achievement{Develop full-stack features and AI agent workflows, integrating LLM-based pipelines into production}
-    \achievement{Built 3D segmentation models for point cloud and mesh data, improving object-level accuracy for downstream geometric processing}
-    \achievement{Designed and implemented toolpath slicing strategies, developing algorithms for path generation and optimization}
-    \tech{Python, PyTorch, 3D Segmentation, Point Clouds, Toolpath Generation, LLMs, Full-Stack}
+    \achievement{Develop software for industrial multi-axis additive manufacturing in Vienna: the path from a 3D model to a robot-ready, multi-axis toolpath.}
+    \achievement{Build the 3D segmentation pipeline (geometry and machine learning) that splits a mesh into printable regions, proposes cutting planes and build orientations, and smooths region boundaries.}
+    \achievement{Develop the slicing engine in Go, with performance-critical parts in Rust: non-planar layers, multi-axis motion, and toolpath and G-code generation for industrial robot arms and multi-axis machines.}
+    \achievement{Build the full-stack slicer product: React, TypeScript and three.js apps for slicing and toolpath editing, the Go slicing service, and language-model agents that help build, inspect and debug toolpaths.}
+    \tech{Go, Rust, Python, TypeScript, React, three.js, FastAPI, trimesh, NumPy, PostgreSQL, Docker}
 }
 
 \experience{susteam}{CTO \& Data Scientist}{Jan 2023}{Feb 2025}
@@ -126,51 +127,46 @@ Telecommunications}{2014}{2020}{
 \noindent\begin{tabularx}{\textwidth}{@{}X@{}X@{}X@{}X@{}}
 \textbf{Software Development}
 \begin{itemize}
-    \item Docker
-    \item Python
-    \item C++
-    \item R
-    \item Django
-    \item Flask
-    \item FastAPI
-    \item JavaScript
-    \item React, Svelte
+    \item Python, Go, Rust, C++, R
+    \item TypeScript, JavaScript
+    \item Node.js, Bun
+    \item FastAPI, Django, Flask
+    \item React, Svelte, three.js
+    \item Docker, Git
 \end{itemize}
 &
 \textbf{Machine Learning}
 \begin{itemize}
-    \item scikit-learn
-    \item Pandas
-    \item NumPy
-    \item TensorFlow
-    \item PyTorch
+    \item scikit-learn, Pandas, NumPy
+    \item TensorFlow, PyTorch
     \item OpenCV, YOLO
     \item NLTK, spaCy
     \item BERT, Llama 3, GPT
     \item LangChain, LlamaIndex
+    \item Anthropic agents, MCP
 \end{itemize}
 &
-\textbf{Databases and Cloud}
+\textbf{3D \& Manufacturing}
 \begin{itemize}
-    \item Git
-    \item PostgreSQL
-    \item MongoDB
-    \item Redis
-    \item RabbitMQ
+    \item 3D segmentation
+    \item Mesh processing, trimesh
+    \item Slicing, toolpath generation
+    \item G-code
+    \item Robot arms
+    \item Multi-axis printing
+\end{itemize}
+&
+\textbf{Data and Cloud}
+\begin{itemize}
+    \item PostgreSQL, MongoDB
+    \item Redis, RabbitMQ
     \item nginx, Gunicorn
     \item Spark
     \item AWS EC2, S3
-    \item Linux/Debian/Fedora
-\end{itemize}
-&
-\textbf{Languages}
-\begin{itemize}
-    \item English (C1)
-    \item German (A2)
-    \item Russian (C2)
-    \item Armenian (B2)
+    \item Linux (Debian, Fedora)
 \end{itemize}
 \end{tabularx}
+\par\vspace{2pt}\noindent\textbf{Languages:} English (C1), Russian (C2), Armenian (B2), German (A2)
 
 % ----- Technical Projects -----
 % \section{Technical Projects}

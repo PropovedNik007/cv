@@ -42,10 +42,11 @@ Telecommunications}{2014}{2020}{
 \section{Work Experience}
 
 \experience{Flexam}{Software \& Machine Learning Engineer}{Feb 2026}{Present}{
-    \achievement{Develop full-stack features and AI agent workflows, integrating LLM-based pipelines into production}
-    \achievement{Built 3D segmentation models for point cloud and mesh data, improving object-level accuracy for downstream geometric processing}
-    \achievement{Designed and implemented toolpath slicing strategies, developing algorithms for path generation and optimization}
-    \tech{Python, PyTorch, 3D Segmentation, Point Clouds, Toolpath Generation, LLMs, Full-Stack}
+    \achievement{Develop software for industrial multi-axis additive manufacturing in Vienna: the path from a 3D model to a robot-ready, multi-axis toolpath.}
+    \achievement{Build the 3D segmentation pipeline (geometry and machine learning) that splits a mesh into printable regions, proposes cutting planes and build orientations, and smooths region boundaries.}
+    \achievement{Develop the slicing engine in Go, with performance-critical parts in Rust: non-planar layers, multi-axis motion, and toolpath and G-code generation for industrial robot arms and multi-axis machines.}
+    \achievement{Build the full-stack slicer product: React, TypeScript and three.js apps for slicing and toolpath editing, the Go slicing service, and language-model agents that help build, inspect and debug toolpaths.}
+    \tech{Go, Rust, Python, TypeScript, React, three.js, FastAPI, trimesh, NumPy, PostgreSQL, Docker}
 }
 
 \experience{susteam}{CTO \& Data Scientist}{Jan 2023}{Feb 2025}{
@@ -277,9 +278,10 @@ Telecommunications}{2014}{2020}{
 
 
 \section{Technical Skills}
-\begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+\noindent\begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
 AI/ML:        & Python, TensorFlow, PyTorch, LLMs (BERT, Llama, GPT), RAG, LangChain, Computer Vision (YOLO, OpenCV), scikit-learn, Pandas, NumPy \\
-Engineering:  & FastAPI, Django, React, Svelte, JavaScript/TypeScript, Docker, AWS (EC2/S3), PostgreSQL, Redis, RabbitMQ, Linux \\
+Engineering:  & Go, Rust, TypeScript/JavaScript, Node.js, Bun, FastAPI, Django, React, Svelte, three.js, Docker, AWS (EC2/S3), PostgreSQL, Redis, RabbitMQ, Linux \\
+3D \& Manufacturing: & 3D segmentation, mesh processing (trimesh), slicing, toolpath generation, G-code, robot arms, multi-axis printing \\
 Languages:    & English (C1), Russian (C2), Armenian (B2), German (A2) \\
 \end{tabularx}
 

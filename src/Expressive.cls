@@ -121,7 +121,7 @@
 \newcommand{\location}[1]{\faIcon{map-marker-alt} #1}
 % Experience/Achievements
 \newcommand{\tech}[1]{\textbf{#1}}
-\newcommand{\role}[2]{\textbf{#2 | \emph{#1}}}
+\newcommand{\role}[2]{\textbf{#2 \textemdash{} \emph{#1}}}
 \newcommand{\subrole}[4]{\emph{#1 (#2 - #3)} #4}
 \newcommand{\tenure}[2]{\textsc{#1} - \textsc{#2}}
 \newcommand{\achievement}[1]{%
